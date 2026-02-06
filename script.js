@@ -123,7 +123,7 @@ const LETTER_TEXT =
   "That you like me and I like you… a LOT.\n" +
   "I miss you too.\n\n" +
   "You know, liking you and taking the risk was worht it.\n" +
-  "I literally use my OC's to cope being a friend only.\n" +
+  "I literally start to imagine myself better for you.\n" +
   "But now, look! We're girlfriends!\n" +
   "I want to make you happy and laugh more.\n\n" +
   "Thank you being the lover that I thought the world cannot afford to give me.\n" +
@@ -321,4 +321,5 @@ window.addEventListener("keydown", (e) => {
 });
 
 // init
+
 resetAsk();
