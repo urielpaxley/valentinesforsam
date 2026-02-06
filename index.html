@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ff4d88" />
+  <title>₊˚⊹♡loml♡₊˚⊹</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="wrap" role="main">
+    <header class="top">
+      <div class="badge" aria-hidden="true">💘</div>
+      <h1>I made you something, Babe</h1>
+      <p class="sub">Yes, this is a valentine website just for you! </p>
+    </header>
+
+    <!-- SCREEN 1: UNLOCK -->
+    <section class="card screen" id="screen-lock" aria-labelledby="lockTitle">
+      <div class="card-title">
+        <h2 id="lockTitle">( ╹ -╹)? I think you need to enter your name?</h2>
+        <p class="muted">This is like a passowrd to make it more fun? Ehe!</p>
+      </div>
+
+      <div class="lockbox">
+        <label class="sr-only" for="codeInput">Secret code</label>
+        <input id="codeInput" type="password" inputmode="text" autocomplete="off"
+               placeholder="Type the secret code…" />
+        <button id="unlockBtn" class="btn primary">Unlock</button>
+      </div>
+
+      <p id="lockMsg" class="msg" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- SCREEN 2: LETTER -->
+    <section class="card screen" id="screen-letter" aria-labelledby="letterTitle" hidden>
+      <div class="card-title">
+        <h2 id="letterTitle">I got you a mail ₍ᐢ. .ᐢ₎ ₊˚⊹♡</h2>
+        <p class="muted">Tap the envelope seal to open.</p>
+      </div>
+
+      <div class="envelope-stage">
+        <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open envelope">
+          <div class="env-back"></div>
+          <div class="env-front"></div>
+          <div class="env-flap"></div>
+          <div class="seal" aria-hidden="true">❤</div>
+
+          <div class="letter">
+            <div class="letter-top">
+              <span class="stamp" aria-hidden="true">🌹</span>
+              <span class="to">To: <b id="toName">my girlfriend ( ⸝⸝´ ᵕ `⸝⸝)</b></span>
+            </div>
+            <div class="letter-body">
+              <p class="type" id="typedLetter"></p>
+              <p class="signature">— <span id="fromName">your An</span> ˙ᵕ˙</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="letter-actions">
+          <button id="retypeBtn" class="btn ghost">Retype</button>
+          <button id="nextToAskBtn" class="btn primary" disabled>Continue ➜</button>
+        </div>
+
+        <p class="muted small">(Letter for one and only!)</p>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: ASK -->
+    <section class="card screen" id="screen-ask" aria-labelledby="askTitle" hidden>
+      <div class="ask2">
+        <h2 id="askTitle" class="ask2-title">You will be my valentine (*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ</h2>
+        <p id="ask2Sub" class="muted">(❀❛ ֊ ❛„)♡ Do you want to be my valentine</p>
+
+        <div class="noteBox" id="noteBox" aria-live="polite">
+          <div class="noteHeader">
+            <span>Together in:</span>
+            <b id="noteCount">0</b>
+          </div>
+          <div class="noteBody" id="noteText">(Tap “Yes” to start)</div>
+        </div>
+
+        <div class="actions thumb-zone" id="arena">
+          <div class="liquid-surface" aria-hidden="true"></div>
+          <button id="yes" class="btn yes yes-grow">Yes</button>
+        </div>
+
+        <div id="final" class="final" hidden>
+          <img src="yipee.gif" alt="Funny animation" width="400" height="300">
+          <p id="finalMsg">Yeah! Let's go date in MLBB and share our dark system?</p>
+          <div class="final-actions">
+            <button id="replayBtn" class="btn ghost">Replay 🔁</button>
+          </div>
+        </div>
+
+        <p class="muted small">Tip: press <b>R</b> to replay</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
