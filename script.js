@@ -124,7 +124,7 @@ const LETTER_TEXT =
   "I miss you too.\n\n" +
   "You know, liking you and taking the risk was worht it.\n" +
   "I literally start to imagine myself better for you.\n" +
-  "But now, look! We're girlfriends!\n" +
+  "That's the imapct you have given to me, thats why.\n" +
   "I want to make you happy and laugh more.\n\n" +
   "Thank you being the lover that I thought the world cannot afford to give me.\n" +
   "You are important to me, more than you know.\n\n" +
@@ -323,3 +323,4 @@ window.addEventListener("keydown", (e) => {
 // init
 
 resetAsk();
+
