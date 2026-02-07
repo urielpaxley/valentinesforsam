@@ -122,10 +122,10 @@ const LETTER_TEXT =
   "I’m proud of you and I'm so lucky.\n" +
   "That you like me and I like you… a LOT.\n" +
   "I miss you too.\n\n" +
-  "You know, liking you and taking the risk was worht it.\n" +
-  "I literally start to imagine myself better for you.\n" +
-  "That's the imapct you have given to me, thats why.\n" +
-  "I want to make you happy and laugh more.\n\n" +
+  "You know, liking you and taking the risk was worth it.\n" +
+  "Because I start to imagine myself better for you.\n" +
+  "You made me happy and feel love for a person who don't know what love is.\n" +
+  "I want to make you happy and laugh more, so.\n\n" +
   "Thank you being the lover that I thought the world cannot afford to give me.\n" +
   "You are important to me, more than you know.\n\n" +
   "Now… I have a question  (｡•́   ̫ •̀｡)";
@@ -323,4 +323,5 @@ window.addEventListener("keydown", (e) => {
 // init
 
 resetAsk();
+
 
